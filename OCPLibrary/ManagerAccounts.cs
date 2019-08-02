@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OCPLibrary
 {
-    public class Accounts : IAccounts
+    public class ManagerAccounts : IAccounts
     {
         public EmployeeModel Create(IApplicantModel person)
         {
@@ -15,10 +15,10 @@ namespace OCPLibrary
             output.FirstName = person.FirstName;
             output.LastName = person.LastName;
             output.EmailAddress = $"{person.FirstName.Substring(0, 1)}_{person.LastName}@acme.com";
+            output.isManager = true;
 
             return output;
 
         }
-
     }
 }
