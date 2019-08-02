@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCPLibrary", "OCPLibrary\OCPLibrary.csproj", "{5A567219-DD97-44B0-BFDA-FC3FAD446EA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{A721ADAD-F704-4793-B482-07CABB296FCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5A567219-DD97-44B0-BFDA-FC3FAD446EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A567219-DD97-44B0-BFDA-FC3FAD446EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A567219-DD97-44B0-BFDA-FC3FAD446EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A721ADAD-F704-4793-B482-07CABB296FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A721ADAD-F704-4793-B482-07CABB296FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A721ADAD-F704-4793-B482-07CABB296FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A721ADAD-F704-4793-B482-07CABB296FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
