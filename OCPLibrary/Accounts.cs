@@ -16,6 +16,11 @@ namespace OCPLibrary
             output.LastName = person.LastName;
             output.EmailAddress = $"{person.FirstName.Substring(0,1)}_{person.LastName}@acme.com";
 
+            if (person.persontype == PersonType.Manager)
+            {
+                output.isManager = true;
+            }
+
             return output;
 
         }

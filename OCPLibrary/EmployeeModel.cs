@@ -14,6 +14,8 @@ namespace OCPLibrary
 
         public string EmailAddress { get; set; }
 
+        public bool isManager { get; set; } = false;
+
 
     }
 }
