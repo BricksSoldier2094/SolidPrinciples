@@ -26,12 +26,14 @@ namespace SolidPrinciples
             if (string.IsNullOrWhiteSpace(usuario.FirstName))
             {
                 Write("Você não informou um primeiro nome válido!");
+                Console.Read();
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(usuario.LastName))
             {
                 Write("Você não informou um úlimo nome válido!");
+                Console.Read();
                 return;
             }
 
