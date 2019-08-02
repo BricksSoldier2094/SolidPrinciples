@@ -12,35 +12,22 @@ namespace SolidPrinciples
         static void Main(string[] args)
         {
             //Mensagem de boas vindas
-            WriteLine("Bem vindo ao meu programa!");
+            StandardMessages.WelcomeMesage();
 
             //Captura dados do usuario
-            Usuario usuario = new Usuario();
-            Write("Informe o seu primeiro nome: ");
-            usuario.FirstName = ReadLine();
-            
-            Write("Informe o seu último nome: ");
-            usuario.LastName = ReadLine();
+            var user = PersonDataCapture.Capture();
 
             //Valida as informações do usuario
-            if (string.IsNullOrWhiteSpace(usuario.FirstName))
+            if (!PersonValidator.Validate(user))
             {
-                Write("Você não informou um primeiro nome válido!");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(usuario.LastName))
-            {
-                Write("Você não informou um úlimo nome válido!");
+                StandardMessages.EndApplication();
                 return;
             }
 
             //Cria um novo usuario
-            WriteLine($"Seu nome de usuário é {usuario.FirstName.Substring(0, 3)}{usuario.LastName}" );
+            AccountGenerator.CreateAccount(user);
 
-            ReadLine();
-
-
+            StandardMessages.EndApplication();
         }
     }
 
