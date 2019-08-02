@@ -16,8 +16,8 @@ namespace ConsoleUI
             List<PersonModel> applicants = new List<PersonModel>
             {
                 new PersonModel { FirstName = "Henrique", LastName ="Souza"},
-                new PersonModel { FirstName = "Ororo", LastName= "Monroe", persontype = PersonType.Manager },
-                new PersonModel { FirstName = "Jean", LastName = "Grey"}
+                new PersonModel { FirstName = "Ororo", LastName= "Monroe", TypeOfEmployee = EmployeeType.Manager },
+                new PersonModel { FirstName = "Jean", LastName = "Grey", TypeOfEmployee = EmployeeType.Executive}
             };
 
             List<EmployeeModel> Employees = new List<EmployeeModel>();
@@ -30,7 +30,7 @@ namespace ConsoleUI
 
             foreach (EmployeeModel emp in Employees)
             {
-                Console.WriteLine($"{emp.FirstName} {emp.LastName} | {emp.EmailAddress} | {emp.isManager}");
+                Console.WriteLine($"{emp.FirstName} {emp.LastName} | {emp.EmailAddress} | {emp.isManager} | {emp.isExecutive}");
             }
 
             Console.ReadLine();

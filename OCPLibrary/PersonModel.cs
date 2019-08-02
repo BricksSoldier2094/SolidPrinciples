@@ -12,6 +12,6 @@ namespace OCPLibrary
 
         public string LastName { get; set; }
 
-        public PersonType persontype { get; set; } = PersonType.Staff;
+        public EmployeeType TypeOfEmployee { get; set; } = EmployeeType.Staff;
     }
 }

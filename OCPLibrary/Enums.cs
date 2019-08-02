@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OCPLibrary
 {
-    public enum PersonType
+    public enum EmployeeType
     {
         Manager,
         Staff,
