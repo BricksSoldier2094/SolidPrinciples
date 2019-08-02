@@ -16,5 +16,8 @@ namespace OCPLibrary
 
         public bool isManager { get; set; } = false;
 
+        public bool isExecutive { get; set; }
+
+
     }
 }
