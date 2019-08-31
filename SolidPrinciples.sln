@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCPLibrary", "OCPLibrary\OC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{A721ADAD-F704-4793-B482-07CABB296FCC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRP", "SRP", "{0A40E8CF-40FF-40A8-876E-C9FEC402855F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCP", "OCP", "{CD0DE93C-B65F-4676-90AB-A0171385D01F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BCA7B7F-6B0F-41C6-BF36-8E7DE59194F6} = {0A40E8CF-40FF-40A8-876E-C9FEC402855F}
+		{5A567219-DD97-44B0-BFDA-FC3FAD446EA3} = {CD0DE93C-B65F-4676-90AB-A0171385D01F}
+		{A721ADAD-F704-4793-B482-07CABB296FCC} = {CD0DE93C-B65F-4676-90AB-A0171385D01F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61BCD6A1-0130-485F-8931-540BF7152F87}

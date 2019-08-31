@@ -14,7 +14,7 @@ namespace OCPLibrary
 
             output.FirstName = person.FirstName;
             output.LastName = person.LastName;
-            output.EmailAddress = $"{person.FirstName}_{person.LastName}@acmecorp.com";
+            output.EmailAddress = $"{person.FirstName.ToLower()}.{person.LastName.ToLower()}@acmecorp.com";
             output.isManager = true;
             output.isExecutive = true;
 
